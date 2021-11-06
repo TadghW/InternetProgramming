@@ -1,0 +1,155 @@
+/*raise default z-index, so elements placed about the video background by default*/
+* {
+    z-index: 3;
+}
+
+/*remove html padding and margin, set default font and size, scroll-behavior, and use flex as a default centering mechanism for main divs*/
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*reset link colour and decoration*/
+a {
+    transition: 0.25s;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*navigation menu and link list*/
+#banner {
+    height: 65px;
+    background-color: #000;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner-list {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#banner-list li {
+    list-style: none;
+    margin: 0 15px 0 15px;
+}
+
+/*main heading*/
+h1 {
+    font-weight: 300;
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+/*video background settings*/
+#background {
+    position: fixed;
+    filter: brightness(0.2);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+
+/*assignment text content fits within a fixed width div - sized for native 768p*/
+#content {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 1000px;
+    margin: 85vh 0 0 0;
+    padding: 25px 100px 200px 100px;
+    background: rgb(36, 33, 33);
+}
+
+/*clear up the paragraphs and highlight links*/
+p {
+    line-height: 1.5em;
+}
+
+p>a {
+    border-bottom: 1px dotted #fff;
+}
+
+P>a:hover {
+    border-bottom: none;
+}
+
+/*text is already centered, this just centers headings*/
+#content > div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 80px 0 40px 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h3:nth-of-type(1n) {
+    margin-top: 40px;
+}
+
+
+
+p {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+#matches li {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 3em;
+}
+
+.roster {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.roster img, .roster div {
+    display: block;
+    width: 250px;
+    margin: 20px 40px 20px 40px;
+}
+
+.roster img {
+    border-radius: 100%;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    width: 1000px;
+    background:rgb(36, 33, 33);
+    border-top: 1px dotted #fff;
+    margin-top: 150px;
+}
+
+footer>p:nth-of-type(1) {
+    margin-top: 55px;
+}

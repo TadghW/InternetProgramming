@@ -1,0 +1,50 @@
+/*resetting bootstrap styles I don't want*/
+/*setting default z-index of foreground elements*/
+* {
+    background: none !important;
+    color: #fff !important;
+    border: none !important;
+    z-index: 3;
+}
+
+html {
+    font-size: 24px;
+}
+
+
+/*video background settings*/
+#background {
+    position: fixed;
+    filter: brightness(0.2);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+
+
+.nav {
+    margin-bottom: 65vh;
+}
+
+.card {
+    margin-top: 100px;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+#news-title{ 
+    margin-bottom: -100px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    width: 1000px;
+    border-top: 1px dotted #fff;
+    margin-top: 150px;
+}
+
