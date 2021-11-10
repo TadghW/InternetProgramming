@@ -104,6 +104,27 @@
             </div>
         </div>
 
+        <div class="card d-none d-sm-block text-center" id="comments">
+        <div class="card-body"></div>
+        <h2 class="title">Comments</h2>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputUsername">Username</label>
+                <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+              </div>
+              <div class="form-groups">
+                <label for="inputComment">Comment</label>
+                <input type="text" class="form-control" id="inputComment" placeholder="Post your comment">
+              </div>
+            </div>
+   
+            <button type="button" class="btn btn-primary" onclick="postComment()">Post Comment</button>
+
+            <div id="comment-section"></div>
+        </form>
+        </div>
+
         <footer>
             <p><a href="https://en.wikipedia.org/wiki/cattle" target="_blank">About Cows</a></p>
             <p><a href="https://en.wikipedia.org/wiki/Bovine_sports" target="_blank">About Bovine Sports</a></p>
@@ -111,6 +132,8 @@
             <p><a href="https://www.gov.ie/en/organisation/department-of-agriculture-food-and-the-marine/" target="_blank">Department of Agriculture, Food, and the Marine</a></p>
             <p><a href="https://tadghwagstaff.com" target="_blank">About Us</a></p>
         </footer> 
+
+        <script src="icrascript.js"></script>
 
         <script type="module">
             // Import the functions you need from the SDKs you need

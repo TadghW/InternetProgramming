@@ -1,6 +1,6 @@
 /*resetting bootstrap styles I don't want*/
 /*setting default z-index of foreground elements*/
-* {
+*:not(.btn):not(.form-control):not(footer) {
     background: none !important;
     color: #fff !important;
     border: none !important;
@@ -44,7 +44,32 @@ footer {
     display: flex;
     flex-flow: column;
     width: 1000px;
-    border-top: 1px dotted #fff;
     margin-top: 150px;
+    padding: 50px;
 }
 
+#inputUsername, #inputComment {
+    background: #fff !important;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+label {
+    float: left;
+}
+
+#comment-section{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.comment {
+    padding: 25px;
+}
+
+#comment-section {
+    margin-top: 50px;
+}
